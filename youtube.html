@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="style/sidebar.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu"src="icons/hamburger-menu.svg">
+          <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middile-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!--To create this "ToolTip" we have to put position:absolute; 
+        inside position:relative;-->
+        <button class="voice-search-button">
+          <img class="voice-search-icon"src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon"src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon"src="icons/youtube-apps.svg">
+          <div class="tooltip">Youtube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="tooltip">Notifications</div>
+          <div class="notifications-count">3</div>
+        </div>
+
+        <img class="current-user-picture"src="channel-images/WhatsApp Image 2024-07-25 at 17.40.27_49ccf955.jpg">
+
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img  src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <!--creating a vertical layout with 2 div's-->
+          <!--vertical layout 1-->
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            <div class="video-time">14:20</div>
+          </div>
+          <!--vertical layout 2-->
+          <div class="video-info-grid">
+            <!--creating a horizontal layout with 2 div's-->
+            <!--horizontal layout 1-->
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-images/channel-1.jpeg">
+            </div>
+             <!--horizontal layout 2-->
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+              </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/hq720.avif">
+        <div class="video-time">30:15</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-images/channels4_profile.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Endhukante Premanta Comedy Scenes | Endhukante 
+            Premanta Movie | Ram Pothineni | iDream
+          </p>
+        <p class="video-author">
+          iDream Celebrity Masti
+        </p>
+        <p class="video-stats">
+          243K views &#183; 6 months ago
+        </p>
+        </div>
+    </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/hq7203.avif">
+        <div class="video-time">4:20</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-images/5.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Vazhithunaiye Video Song | Dragon | Pradeep Ranganathan, Kayadu | Ashwath Marimuthu | Leon James
+          </p>
+        <p class="video-author">
+          Think Music India  
+        </p>
+        <p class="video-stats">
+          1.2M views &#183; 1 day ago
+        </p>
+        </div>
+    </div>
+    </div>
+    
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/hq7204.avif">
+        <div class="video-time">3:20</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-images/6.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            MAD Square Teaser | Narne Nithiin, Sangeeth Shobhan, Ram Nithin | Kalyan Shankar
+          </p>
+        <p class="video-author">
+          Aditya Music
+        </p>
+        <p class="video-stats">
+          802K views &#183; 1 day ago
+        </p>
+        </div>
+    </div>
+    </div>
+    
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/hq7202.avif">
+        <div class="video-time">20:30</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-images/4.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Uyyala Jampala Back to Back Comedy Scenes | Raj Tarun | Avika Gor | Telugu Movie Scenes
+          </p>
+        <p class="video-author">
+          SriBalajiMovies
+        </p>
+        <p class="video-stats">
+          475K views &#183; 5 months ago
+        </p>
+        </div>
+    </div>
+    </div>
+    
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/hq7201.avif">
+        <div class="video-time">6:31:23</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-images/simple.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            HTML & CSS Full Course - Beginner to Pro
+          </p>
+        <p class="video-author">
+          SuperSimpleDev
+        </p>
+        <p class="video-stats">
+          13M views &#183; 3 years ago
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    </main>
+    
+  
+    
+
+
+
+
+
+
+
+  </body>
+</html>
